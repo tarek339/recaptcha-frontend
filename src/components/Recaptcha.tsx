@@ -26,7 +26,11 @@ const Recaptcha = () => {
     <Flex direction={"row"} gap={0} justify="center">
       <ReCAPTCHA
         onChange={handleChange}
+        // The site key is used to invoke the reCAPTCHA service in your application.
         sitekey={import.meta.env.VITE_APP_SITE_KEY}
+        // The secret key authorizes communication between backend and the reCAPTCHA server
+        // to verify the user's response.
+        stoken={import.meta.env.VITE_APP_SECRET_KEY}
         type="image"
       />
     </Flex>
