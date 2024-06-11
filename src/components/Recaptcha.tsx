@@ -14,7 +14,9 @@ const Recaptcha = () => {
   // in the useEffect the user is redirected to the website if token is stored
   useEffect(() => {
     if (token) {
-      window.location.href = import.meta.env.VITE_APP_PROXY_URL;
+      setTimeout(() => {
+        window.location.href = import.meta.env.VITE_APP_PROXY_URL;
+      }, 1000);
     }
   }, [token]);
 
