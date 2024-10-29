@@ -1,5 +1,3 @@
-import "./App.css";
-
 const url = "https://www.youtube.com/watch?v=Poa5oKIyMd4";
 
 const scrape = () => {
