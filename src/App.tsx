@@ -1,6 +1,4 @@
 import "./App.css";
-import { NoRobotCheck } from "./views";
-import ogs from "open-graph-scraper";
 
 const url = "https://www.youtube.com/watch?v=Poa5oKIyMd4";
 
